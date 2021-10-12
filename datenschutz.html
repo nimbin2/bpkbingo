@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+	<title>BPK Bingo Datenschutz</title>
+	<meta charset="UTF-8" />
+	<link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+	<div class="page page-di page-datenschutz">
+		<a class="button-back button-whiteBlue" href="https://bpkbingo.de">Zurück</a>
+		<h1>Datenschutz</h1>
+		<p>Eure persönlichen Daten sind wichtige Informationen, deren Aufbewahrung in euren Händen liegen sollte. Ich speichere keine Daten, die Rückschlüsse auf die Herkunft eines Zugriffes ziehen lassen (bsp.: ip-Adresse, Browser Fingerprint). Auf dieser Seite kläre ich über alle Daten auf, welche bei einem Zugriff auf bpkbingo.de oder beim Speichern eines Statements auf der Selbigen, gespeichert werden.</p>
+		<h3>Speichern von Anfragen</h3>
+		<p>Für mich ist es wichtig zu sehen, wie auf meinen Server zugegriffen wird, um schädliche Angriffe erkennen zu können. Daher speichere ich die Art des Zugriffes in Logfiles.<br>Mit jeder Anfrage wird ein Eintrag generiert, der vorerst dauerhaft gespeichert ist. Form und Beispiele eines solchen Eintrages sehen wie folgt aus:</p>
+		<table>
+			<thead>
+				<tr><th colspan="2">LogFormat "%t \"%r\" %&gt;s %O"</th></tr>
+			</thead>
+			<tbody>
+				<tr><td>%t</td><td>Zeit und Zeitzone im Format [18/Sep/2011:19:18:28 -0400].</td></tr>
+				<tr><td>%r</td><td>Erste Zeile der Anfrage.</td></tr>
+				<tr><td>%&gt;s</td><td>Bei Anfragen, die intern umgeleitet wurden, ist dies der Status der ursprünglichen Anfrage.</td></tr>
+				<tr><td>%O</td><td>Gesendete Bytes, einschließlich Header.</td></tr>
+				<tr><td>\"</td><td>Anführungszeichen.</td></tr>
+				<tr><td colspan="2">Beispiel eines normalen Zugriffs auf diese Seite:<br>[24/Apr/2021:14:28:37 +0200] "GET / HTTP/1.1" 200 16108</td></tr>
+				<tr><td colspan="2">Beispiel eines versuchten Angriffs:<br>[27/Mar/2021:18:34:10 +0100] "GET /solr/admin/info/system?wt=json HTTP/1.1" 404 979</td></tr>
+			</tbody>
+		</table>
+		<br>
+		<h3>Speichern eines Statements</h3>
+		<p>Beim Speichern eines Statements werden folgende Daten dauerhaft auf meinem Server gespeichert:<br>"Automatisch generierte id", "dein Statement", "deine ausgewählte Gruppe", "ein rank up von 10", "ein rank down von 0".<br>Das Entfernen eines Statements muss mit einer Mail an mail[at]christianimmanuel.de oder mit einer anderen Kontaktmöglichkeit angefordert werden.<br>Wenn möglich, übernehme ich keine rechtliche Haftung für gespeicherte Statements, auch wenn ich mich in der Verantwortung sehe. Ich nehme mir raus, unpassendere Statements, als die BPK erlaubt, zu entfernen.</p>
+		<p>Beim Ranken eines Statements wird die vorherige Zahl plus Eins dauerhaft ohne weitere Informationen gespeichert.</p>
+		<br><br>
+		<p>Mit besten Grüßen,<br>Christian Immanuel Fischer<br>Teterower Ring 110<br>12619 Berlin<br>mail[at]christianimmanuel.de</p>
+		<a class="imprint-link" href="https://bpkbingo.de/impressum">Impressum<a>
+	</div>
+</body>
+</html>
